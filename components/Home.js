@@ -21,7 +21,7 @@ function Home() {
   };
    //utilisation de useEffect pour gérer le fetch
    useEffect(() => {
-    fetch('http://localhost:3000/movies') 
+    fetch('mymovies-backend-9vm3xpuhw-andrea-truchots-projects.vercel.app/movies') 
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies);
